@@ -107,5 +107,41 @@ def i_primes(n1,n2):
             None
 
 
+def palindrome(n):
+    m = n
+    rev = 0
+    while (n != 0):
+        r = n % 10
+        rev = (rev * 10) + r
+        n = n // 10
 
+    if (rev == m):
+        print(True)
+    else:
+        print(False)
+
+
+def n_palindromes(num):
+    for n in range(0, num + 1):
+        m = n
+        rev = 0
+        while (n != 0):
+            r = n % 10
+            rev = (rev * 10) + r
+            n = n // 10
+
+        if (rev == m):
+            print(rev)
+
+def i_palindromes(num1,num2):
+    for n in range(num1, num2 + 1):
+        m = n
+        rev = 0
+        while (n != 0):
+            r = n % 10
+            rev = (rev * 10) + r
+            n = n // 10
+
+        if (rev == m):
+            print(rev)
 
