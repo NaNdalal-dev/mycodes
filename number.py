@@ -145,3 +145,45 @@ def i_palindromes(num1,num2):
         if (rev == m):
             print(rev)
 
+def amst(num):
+    ams = 0
+    n = n1 = n2 = num
+    count = 0
+    while (n != 0):
+        n = n // 10
+        count += 1
+
+    while (n1 != 0):
+        r = n1 % 10
+        ams = ams + r ** count
+        n1 = n1 // 10
+    if (n2 == ams):
+        return True
+    else:
+        return False
+
+def n_amst(num):
+    for n in range(0, num + 1):
+        i = n
+        ams = 0
+        dt = len(str(n))
+        while (n != 0):
+            r = n % 10
+            ams = ams + r ** dt
+            n = n // 10
+        if (i == ams):
+            print(i)
+
+
+
+def i_amst(num1,num2):
+    for n in range(num1, num2 + 1):
+        i = n
+        ams = 0
+        dt = len(str(n))
+        while (n != 0):
+            r = n % 10
+            ams = ams + r ** dt
+            n = n // 10
+        if (i == ams):
+            print(i)
